@@ -36,6 +36,10 @@ a:hover{
     background: #4aaaa5;
 }
 
+a:active{
+    filter:brightness(70%);
+}
+
 section {
     background: #ffffff;
     border: 2px solid #dddddd;
@@ -104,12 +108,59 @@ textarea {
 button {
     font-size: 18px;
     color: #ffffff;
-    
     padding: 10px 20px 10px 20px;
+    background: #dddddd;
+}
+
+button:hover {
     background: #4aaaa5;
+}
+
+button:active {
+    filter: brightness(70%);
 }
 
 .middle {
     border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
+}
+
+.imgbtn {
+    float: left;
+    height: 300px;
+    width:400px;
+    background: #4aaaa5;
+    filter: grayscale(100%);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.imgbtn:hover {
+    cursor: pointer;
+}
+
+.imgbtnbanner {
+    float: left;
+    margin-top: 200px;
+    position: absolute;
+    z-index: 100;
+    width: inherit;
+    background: inherit;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imgbtnimg {
+    height: inherit;
+}
+
+.imgbtn:hover {
+    filter: grayscale(0%);
+}
+
+.imgbtn:active {
+    filter:brightness(70%);
 }
