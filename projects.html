@@ -5,57 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Projects</title>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Logan Hill</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 class="font-weight-light mx-auto page-title">
+            Portfolio
+        </h1>
 
-        <nav>
-            <a href="index.html">About</a>
-            <a class="middle" href="contact.html">Contact</a>
-            <a>Projects</a>
-        </nav>
-    </header>
-    
-    <body>
-        <section>
-            <article>
-                <h2>
-                    Projects
-                </h2>
-                <div class="imgbtn" onclick="location.href='#'">
-                    <div class="imgbtnbanner">Project One</div>
-                    <img src="assets/images/books.jpg" class="imgbtnimg"/>
-                </div>
-                <div class="imgbtn" onclick="location.href='#'">
-                    <div class="imgbtnbanner">Project Two</div>
-                    <img src="assets/images/books.jpg" class="imgbtnimg"/>
-                </div>
-                <div class="imgbtn" onclick="location.href='#'">
-                    <div class="imgbtnbanner">Project Three</div>
-                    <img src="assets/images/books.jpg" class="imgbtnimg"/>
-                </div>
-                <div class="imgbtn" onclick="location.href='#'">
-                    <div class="imgbtnbanner">Project Four</div>
-                    <img src="assets/images/books.jpg" class="imgbtnimg"/>
-                </div>
-                <div class="imgbtn" onclick="location.href='#'">
-                    <div class="imgbtnbanner">Project Five</div>
-                    <img src="assets/images/books.jpg" class="imgbtnimg"/>
-                </div>
-            </article>
-        </section>
-        
-    </body>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <footer>
-        <p>
-            Logan Hill
-        </p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item center-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:3%;">
+        <div class="row">
+            <div class="col-auto">
+
+            </div>
+            <div class="col-md">
+                <div class="jumbotron jumbotron-fluid" style="height: 100%; margin-bottom: 10%;">
+                    <h1 class="content-header">
+                        My Projects
+                    </h1>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                            <div class="imgbtn" onclick="location.href='#'">
+                                <div class="imgbtnbanner">Project</div>
+                                <img src="assets/images/books.jpg" class="imgbtnimg"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-auto">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom w-100">
+        Logan Hill
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

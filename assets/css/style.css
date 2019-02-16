@@ -1,132 +1,58 @@
-* {
-    color: #777777;
-}
-
 body {
     background-image: url(../images/gravel.png);
 }
 
-header {
+.navbar{
+    background: white;
+    border-bottom: 3px solid #dddddd;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+
+
+.content-header{
+    color: #4aaaa5;
     background: #ffffff;
-    padding-left: 11.3%;
     margin-bottom: 20px;
     border-bottom: 3px solid #dddddd;
 }
 
-nav {
-    background: #ffffff;
-    padding: 30px;
-    float: right;
-    margin-right: 11.1%;
-}
 
-a {
-    color: #777777;
-    font-size: 18px;
-    padding: inherit;
-    margin-right: -5px;
-}
 
-a:link {
-    text-decoration: none;
-}
-
-a:hover{
-    color: #ffffff;;
-    background: #4aaaa5;
-}
-
-a:active{
-    filter:brightness(70%);
-}
-
-section {
-    background: #ffffff;
+.jumbotron {
+    background: white;
     border: 2px solid #dddddd;
-    clear: both;
-    padding: 20px;
-    width: 75%;
     margin: auto;
+    width: 66%;
+    margin-top: 50px;
+    padding: 30px;
 }
 
-footer {
+.fixed-bottom {
     background: #666666;
     color: #dddddd;
-    text-align: center;
-    padding: 20px;
     border-top: 5px solid #4aaaa5;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 10px;
 }
 
-article {
-    overflow: auto;
-}
-
-p {
-    font-size: 18px;
-    color: inherit;
-    text-align: inherit;
-}
-
-h1 {
+.active {
     background: #4aaaa5;
+}
+
+.btn-primary {
     color: #ffffff;
-    padding: 20px;
-    font-size: 40px;
-    margin: 0;
-    display: inline-block;
-}
-
-h2 {
-    color: #4aaaa5;
-    font-size: 32px;
-    border-bottom: 3px solid #dddddd;
-    padding: 0 20px 20px 20px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: inherit;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 5px;
-    width: 98.9%;
-    border: 1px solid #dddddd;
-}
-
-textarea {
-    width: 99.4%;
-    height: 300px;
-    border: 1px solid #dddddd;
-}
-
-button {
-    font-size: 18px;
-    color: #ffffff;
-    padding: 10px 20px 10px 20px;
     background: #dddddd;
+    border-color: #dddddd;
 }
 
-button:hover {
+.btn-primary:hover {
     background: #4aaaa5;
-}
-
-button:active {
-    filter: brightness(70%);
-}
-
-.middle {
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
+    border-color: #4aaaa5;
 }
 
 .imgbtn {
-    float: left;
     height: 300px;
     width:400px;
     background: #4aaaa5;
@@ -163,4 +89,44 @@ button:active {
 
 .imgbtn:active {
     filter:brightness(70%);
+}
+
+@media (min-width: 992px) {
+    .page-title{
+    background: #4aaaa5;
+    color: white;
+    padding: 12px 20px 12px 20px;
+    margin: -8px;
+    }
+    .nav-item{
+        padding: 16px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    
+    .nav-item:hover{
+        background: #4aaaa5;
+    }
+    
+    .center-item{
+        border-left: solid 1px #dddddd;
+        border-right: solid 1px #dddddd;
+    }
+}
+
+@media (max-width: 768px) { 
+    .imgbtn{
+        width: 100%;
+        height: 200px;
+    }
+
+    .imgbtnbanner{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 500px){
+    .myImage{
+        width: 100%;
+    }
 }
