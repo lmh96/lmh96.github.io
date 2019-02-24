@@ -7,67 +7,63 @@
 
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
 
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 20px;">
-        <h1 class="font-weight-light mx-auto page-title">
-            About
+    <header>
+        <h1>
+            HANGMAN
         </h1>
+    </header>
+<!-- gameSpace  guessedLetters  theCanvas   gameCanvas  theWord currentGuess-->
+    <main>
+        <div id="gameSpace" class="row">
+            <div class="col">
+                <div class="row">
+                    <div id="theCanvas" class="col">
+                        <div id="top-row" class="row">
+                            <img id="head" src="assets/images/head.png">
+                        </div>
+                        <div id="arm-body-row" class="row">
+                            <img id="left-arm" src="assets/images/leftarm.png">
+                            <img id="body" src="assets/images/body.png">
+                            <img id="right-arm" src="assets/images/rightarm.png">
+                        </div>
+                        <div id="leg-row" class="row">
+                            <img id="legs" src="assets/images/legs.png">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <h2>INCORRECT LETTERS</h2>
+                            <div id="guessedLetters">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2 id="theWord">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item center-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Portfolio</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="container-fluid" style="margin-top: 3%;">
-        <div class="row">
-            <div class="col-auto">
-
-            </div>
-            <div class="col-md">
-                <div class="jumbotron jumbotron-fluid">
-                    <h1 class="content-header">
-                        About Me
-                    </h1>
-                    <img class="float-left myImage" src="assets/images/generic-user-purple.png" style="margin-right: 20px; margin-bottom: 20px;">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor commodi, laboriosam natus eveniet ab adipisci id nulla ullam ratione molestias nam odio. Necessitatibus alias distinctio consequatur placeat, ex facilis. Delectus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas iusto eum. Laborum, eaque velit est, voluptatum nihil nulla perspiciatis debitis voluptates illo iste voluptate quisquam placeat vero obcaecati ad.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsam sit mollitia quae, consequatur fuga vitae sapiente vel illo quas ipsum adipisci modi commodi libero doloremque nihil debitis quo! Quae?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aut corporis, molestiae corrupti iure quo similique. Pariatur, beatae fugiat. Rem sequi fugiat placeat, unde tempore velit id eius consequatur doloremque!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos facere quia incidunt recusandae deserunt sed suscipit, culpa nam voluptatibus cum optio explicabo temporibus ducimus nihil vitae reiciendis soluta illo.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque doloremque perferendis, placeat, a sint et officiis provident temporibus itaque, voluptates eum quis nihil doloribus aliquam non dolorum porro iusto? Soluta.
-                    </p>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 id="currentGuess">
+                        PRESS A LETTER ON THE KEYBOARD
+                    </h2>
                 </div>
             </div>
-            <div class="col-auto">
-
-            </div>
         </div>
-    </div>
+        
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
 
-    <footer class="fixed-bottom w-100">
-        Logan Hill
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+    </main>
 </body>
 </html>

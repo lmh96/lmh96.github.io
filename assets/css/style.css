@@ -1,132 +1,103 @@
-body {
-    background-image: url(../images/gravel.png);
+* {
+    background: black;
+    font-family: 'VT323', monospace;
+    color: green;
 }
 
-.navbar{
-    background: white;
-    border-bottom: 3px solid #dddddd;
-    padding-left: 18%;
-    padding-right: 18%;
-}
-
-
-
-.content-header{
-    color: #4aaaa5;
-    background: #ffffff;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #dddddd;
-}
-
-
-
-.jumbotron {
-    background: white;
-    border: 2px solid #dddddd;
-    margin: auto;
-    width: 66%;
-    margin-top: 50px;
-    padding: 30px;
-}
-
-.fixed-bottom {
-    background: #666666;
-    color: #dddddd;
-    border-top: 5px solid #4aaaa5;
+header {
     text-align: center;
-    padding: 10px;
 }
 
-.active {
-    background: #4aaaa5;
+h1 {
+    font-size: 64px;
 }
 
-.btn-primary {
-    color: #ffffff;
-    background: #dddddd;
-    border-color: #dddddd;
+h2 {
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn-primary:hover {
-    background: #4aaaa5;
-    border-color: #4aaaa5;
+.row {
+    padding: 0px;
+    margin: 0px;
 }
 
-.imgbtn {
-    height: 300px;
-    width:400px;
-    background: #4aaaa5;
-    filter: grayscale(100%);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
+.col {
+    padding: 0px;
+    margin: 0px;
+}
+#gameSpace {
+    border: dashed green 5px;
+    margin: -1% 30% 10% 30%;
+    overflow: auto;
 }
 
-.imgbtn:hover {
-    cursor: pointer;
-}
-
-.imgbtnbanner {
-    float: left;
-    margin-top: 200px;
-    position: absolute;
-    z-index: 100;
-    width: inherit;
-    background: inherit;
-    color: #ffffff;
+#guessedLetters {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 40px;
+    width: 300px;
+    height: 370px;
 }
 
-.imgbtnimg {
-    height: inherit;
+#theCanvas {
+    width: 300px;
+    height: 520px;
+    border-right: dashed green 5px;
 }
 
-.imgbtn:hover {
-    filter: grayscale(0%);
+#currentGuess {
+    text-align: center;
+    border-top: dashed green 5px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
 }
 
-.imgbtn:active {
-    filter:brightness(70%);
+#theWord {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border-top: dashed green 5px;
+    margin: 0;
+    padding: 20px;
 }
 
-@media (min-width: 992px) {
-    .page-title{
-    background: #4aaaa5;
-    color: white;
-    padding: 12px 20px 12px 20px;
-    margin: -8px;
-    }
-    .nav-item{
-        padding: 16px;
-        margin-top: -10px;
-        margin-bottom: -10px;
-    }
-    
-    .nav-item:hover{
-        background: #4aaaa5;
-    }
-    
-    .center-item{
-        border-left: solid 1px #dddddd;
-        border-right: solid 1px #dddddd;
-    }
+#head {
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.0;
 }
 
-@media (max-width: 768px) { 
-    .imgbtn{
-        width: 100%;
-        height: 200px;
-    }
-
-    .imgbtnbanner{
-        margin-top: 100px;
-    }
+#left-arm {
+    height: 190px;
+    margin-left: auto;
+    margin-right: 0px;
+    opacity: 0.0;
 }
 
-@media (max-width: 500px){
-    .myImage{
-        width: 100%;
-    }
+#body {
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.0;
+}
+
+#right-arm {
+    height: 190px;
+    margin-left: 0px;
+    margin-right: auto;
+    opacity: 0.0;
+}
+
+#legs {
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.0;
+}
+
+.div {
+    overflow: auto;
 }
