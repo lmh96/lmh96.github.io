@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
-
-    <title>Document</title>
+    <title>Logan Hill</title>
 </head>
+
 <body>
     <header>
-        <h1>
-            HANGMAN
-        </h1>
-    </header>
-<!-- gameSpace  guessedLetters  theCanvas   gameCanvas  theWord currentGuess-->
-    <main>
-        <div id="gameSpace" class="row">
-            <div class="col">
-                <div class="row">
-                    <div id="theCanvas" class="col">
-                        <div id="top-row" class="row">
-                            <img id="head" src="assets/images/head.png">
-                        </div>
-                        <div id="arm-body-row" class="row">
-                            <img id="left-arm" src="assets/images/leftarm.png">
-                            <img id="body" src="assets/images/body.png">
-                            <img id="right-arm" src="assets/images/rightarm.png">
-                        </div>
-                        <div id="leg-row" class="row">
-                            <img id="legs" src="assets/images/legs.png">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <h2>INCORRECT LETTERS</h2>
-                            <div id="guessedLetters">
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <h2 id="theWord">
-
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <h2 id="currentGuess">
-                        PRESS A LETTER ON THE KEYBOARD
-                    </h2>
-                </div>
-            </div>
+        <div id="header-content">
+            <h1 id="logo">
+                Logan Hill
+            </h1>
         </div>
-        
-        <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.js"
-  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-  crossorigin="anonymous"></script>
 
-        <script src="assets/javascript/game.js"></script>
+        <nav id="nav-options">
+            <button class="nav-btn active" href="">
+                About
+            </button>
+            <button class="nav-btn" href="contact.html">
+                Contact
+            </button>
+            <button class="nav-btn" href="projects.html">
+                Projects
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <img id="about-img">
+        <p id="about-p">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod facere dolores numquam blanditiis labore
+            inventore fugit, autem culpa non a ipsam porro, repellat, corporis cumque cum. At tempore velit eaque.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore odit est corporis, illum modi
+            deleniti ipsam illo suscipit debitis delectus temporibus voluptate eaque fugit quod labore. Voluptates,
+            earum dignissimos?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate animi alias, necessitatibus est, laborum
+            nesciunt illum ea eligendi sunt, perferendis vel et aperiam culpa quam corporis voluptatem possimus omnis
+            sapiente.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, temporibus quasi. Explicabo omnis modi
+            aspernatur, rem delectus voluptatem fugiat, recusandae sed fuga, ex libero blanditiis incidunt sunt mollitia
+            sit porro?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quam ullam nobis qui quas reiciendis
+            doloremque? Quod quae nam eveniet eos amet repellendus alias vel voluptas ad, cupiditate dolor maxime.
+        </p>
     </main>
+
+    <footer>
+        Logan Hill
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/style.js"></script>
 </body>
+
 </html>

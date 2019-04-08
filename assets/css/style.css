@@ -1,103 +1,181 @@
-* {
-    background: black;
-    font-family: 'VT323', monospace;
-    color: green;
+/* UNIVERSAL */
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: white;
+    border-bottom: 2px solid #dddddd;
+    top: 0;
+    z-index: 99;
 }
 
-header {
+body {
+    background-image: url(https://lmh96.github.io/02_homework/assets/images/gravel.png);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    background: #666666;
+    border-top: #4aaaa5 solid 5px;
     text-align: center;
+    color: white;
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
+#header-content {
+    height: 100%;
+    width: calc(100% - 447px);
+    display: inline-block;
 }
 
-.row {
-    padding: 0px;
-    margin: 0px;
+#logo {
+    position: absolute;
+    left: 18%;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    background: #4aaaa5;
+    line-height: normal;
+    font-size: 55px;
+    color: white;
 }
 
-.col {
-    padding: 0px;
-    margin: 0px;
-}
-#gameSpace {
-    border: dashed green 5px;
-    margin: -1% 30% 10% 30%;
-    overflow: auto;
+#nav-options {
+    position: absolute;
+    height: calc(100% + 1px);
+    top: -1px;
+    right: 18%;
+    display: inline-block;
 }
 
-#guessedLetters {
-    text-align: center;
-    font-size: 40px;
-    width: 300px;
-    height: 370px;
-}
-
-#theCanvas {
-    width: 300px;
-    height: 520px;
-    border-right: dashed green 5px;
-}
-
-#currentGuess {
-    text-align: center;
-    border-top: dashed green 5px;
+#content {
+    position: absolute;
+    top: 70px;
     width: 100%;
-    margin: 0;
-    padding: 20px;
+    height: calc(100% - 70px);
 }
 
-#theWord {
-    text-align: center;
+#main-content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    min-height: 300px;
+    padding: 20px;
+    margin-top: 100px;
+    background: white;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-btn {
+    margin-left:-3px;
+    margin-right: -2px;
+    height: 100%;
+    width: 150px;
+    border: none;
+    color: black;
+    background: white;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    outline: none;
+}
+
+.nav-btn:active {
+    background: #dddddd;
+}
+
+.active {
+    color: black;
+    background: #4aaaa5;
+}
+
+.active:active {
+    background: lightgray;
+}
+
+/* ABOUT PAGE */
+
+#about-img {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+}
+
+#about-p {
+    top: 0;
+    display: inline;
+}
+
+/* PRJECTS PAGE */
+
+.project-tile {
+    height: 300px;
+    width: 400px;
+    margin: 11px;
+    background: whitesmoke;
+    display: inline-block;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+.project-tile:hover {
+    filter: none;
+}
+
+.project-tile:active {
+    filter: brightness(50%);
+}
+
+.project-img {
+    height: 100%;
     width: 100%;
-    height: 100px;
-    border-top: dashed green 5px;
-    margin: 0;
-    padding: 20px;
+    overflow: hidden;
 }
 
-#head {
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.0;
+.project-title {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: 40px;
+    background: rgb(87,87,87);
+    color: white;
+    font-size: 32px;
+    text-align: center;
 }
 
-#left-arm {
-    height: 190px;
-    margin-left: auto;
-    margin-right: 0px;
-    opacity: 0.0;
+/* CONTACT PAGE */
+
+#contact-info {
+    margin-top: 20px;
 }
 
-#body {
-    height: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.0;
+#first-name {
+    width:50%;
 }
 
-#right-arm {
-    height: 190px;
-    margin-left: 0px;
-    margin-right: auto;
-    opacity: 0.0;
+#last-name {
+    width:50%;
 }
 
-#legs {
-    height: 175px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.0;
+#email{
+    width:50%;
 }
 
-.div {
-    overflow: auto;
+#message{
+    width: 100%;
 }
