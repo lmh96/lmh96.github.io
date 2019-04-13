@@ -7,52 +7,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #5CA3E4;
+            background-image: url("./assets/images/solar-system.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
 
     <title>Logan Hill</title>
 </head>
 
 <body>
     <header>
-        <div id="header-content">
-            <h1 id="logo">
-                Logan Hill
-            </h1>
-        </div>
-
-        <nav id="nav-options">
-            <button class="nav-btn active" href="">
-                About
-            </button>
-            <button class="nav-btn" href="contact.html">
-                Contact
-            </button>
-            <button class="nav-btn" href="projects.html">
-                Projects
-            </button>
+        <h1 id="logo">
+            Logan Hill
+        </h1>
+        <button id="nav-show">
+            =
+        </button>
+        <nav>
+            <div id="contact-links">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div id="img-space"></div>
+            <div id="nav-btn-section">
+                <button class="nav-btn active" onclick="window.location.href='#'">
+                    About
+                </button>
+                <button class="nav-btn" onclick="window.location.href='./projects.html'">
+                    Projects
+                </button>
+            </div>
         </nav>
     </header>
 
-    <main id="main-content">
-        <img id="about-img">
-        <p id="about-p">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod facere dolores numquam blanditiis labore
-            inventore fugit, autem culpa non a ipsam porro, repellat, corporis cumque cum. At tempore velit eaque.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore odit est corporis, illum modi
-            deleniti ipsam illo suscipit debitis delectus temporibus voluptate eaque fugit quod labore. Voluptates,
-            earum dignissimos?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate animi alias, necessitatibus est, laborum
-            nesciunt illum ea eligendi sunt, perferendis vel et aperiam culpa quam corporis voluptatem possimus omnis
-            sapiente.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, temporibus quasi. Explicabo omnis modi
-            aspernatur, rem delectus voluptatem fugiat, recusandae sed fuga, ex libero blanditiis incidunt sunt mollitia
-            sit porro?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quam ullam nobis qui quas reiciendis
-            doloremque? Quod quae nam eveniet eos amet repellendus alias vel voluptas ad, cupiditate dolor maxime.
-        </p>
+    <main>
+        <div id="me-div">
+            <img id="me-img" src="assets/images/horizon.jpg">
+        </div>
+        <section id="main-contents">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, tempora. Voluptatum, eius. Natus rerum libero doloribus distinctio voluptatibus obcaecati saepe porro, nam eligendi quasi deserunt omnis magnam nobis laboriosam officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptas, blanditiis atque saepe laudantium quo est quas sed ea qui eos harum ipsum officia recusandae debitis totam dolore incidunt?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quam tempora tempore officia eos consequuntur quibusdam repellendus rem explicabo, vitae inventore alias deserunt laboriosam! Blanditiis dolorum quia eius necessitatibus distinctio!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptas nobis hic expedita praesentium aperiam sequi, eos enim nisi, mollitia dolor error laudantium quidem aliquam odio aut perferendis corrupti.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas animi cum repellendus possimus praesentium harum libero voluptatum, delectus error illum consectetur! Dolorem ipsa eligendi eveniet illo, minus sapiente sunt voluptas!
+        </section>
     </main>
 
     <footer>
-        Logan Hill
+        Contacts<br>
+        Phone: 770-241-0986
+        Email: loganhill23@gmail.com
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"

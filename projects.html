@@ -7,78 +7,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #231F20;
+            background-image: url("./assets/images/earth.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
 
     <title>Projects</title>
 </head>
 
 <body>
     <header>
-        <div id="header-content">
-            <h1 id="logo">
-                Logan Hill
-            </h1>
-        </div>
-
-        <nav id="nav-options">
-            <button class="nav-btn" href="index.html">
-                About
-            </button>
-            <button class="nav-btn" href="contact.html">
-                Contact
-            </button>
-            <button class="nav-btn active" href="">
-                Projects
-            </button>
+        <h1 id="logo">
+            Logan Hill
+        </h1>
+        <button id="nav-show">
+            =
+        </button>
+        <nav>
+            <div id="contact-links">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div id="nav-btn-section">
+                <button class="nav-btn" onclick="window.location.href='./index.html'">
+                    About
+                </button>
+                <button class="nav-btn active" onclick="window.location.href='#'">
+                    Projects
+                </button>
+            </div>
         </nav>
     </header>
 
-    <main id="main-content">
-        <div class="project-tile" href="https://lmh96.github.io/Project-1-QuickRecipe/index.html">
-            <img class="project-img">
-            <h2 class="project-title">
-                QuickRecipes
-            </h2>
+    <main id="projects-content">
+        <h1 id="projects-header">
+            Projects
+        </h1>
+        <div class="project-div" href="http://lmh96.github.io/QuickRecipeSite">
+            <div class="project-banner">
+                <i class="fas fa-code" href="https://github.com/lmh96/QuickRecipeSite"></i>
+                QuickRecipe
+            </div>
         </div>
-        <div class="project-tile" href="https://lmh96.github.io/gif-search/index.html">
-            <img class="project-img">
-            <h2 class="project-title">
-                Gif Search
-            </h2>
-        </div>
-        <div class="project-tile" href="https://lmh96.github.io/03_homework/index.html">
-            <img class="project-img">
-            <h2 class="project-title">
-                Hangman Game
-            </h2>
-        </div>
-        <div class="project-tile" href="https://lmh96.github.io/04b_homework/index.html">
-            <img class="project-img">
-            <h2 class="project-title">
+        <div class="project-div">
+            <div class="project-banner">
+                <i class="fas fa-code"></i>
                 RPG Game
-            </h2>
-        </div>
-        <div class="project-tile" href="https://lmh96.github.io/04_homework/index.html">
-            <img class="project-img">
-            <h2 class="project-title">
-                Gem Game
-            </h2>
-        </div>
-        <div class="project-tile" href="#">
-            <img class="project-img">
-            <h2 class="project-title">
-                Train Schedule
-            </h2>
-        </div>
-        <div class="project-tile" href="#">
-            <img class="project-img">
-            <h2 class="project-title">
-                News Search
-            </h2>
+            </div>
         </div>
     </main>
 
     <footer>
-        Logan Hill
+        Contacts<br>
+        Phone: 770-241-0986
+        Email: loganhill23@gmail.com
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"

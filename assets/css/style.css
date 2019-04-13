@@ -1,181 +1,204 @@
 /* UNIVERSAL */
-header {
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background: white;
-    border-bottom: 2px solid #dddddd;
-    top: 0;
-    z-index: 99;
-}
 
-body {
-    background-image: url(https://lmh96.github.io/02_homework/assets/images/gravel.png);
+header {
+    position: relative;
+    vertical-align: center;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     width: 100%;
-    padding: 10px;
-    font-size: 24px;
-    background: #666666;
-    border-top: #4aaaa5 solid 5px;
     text-align: center;
+    background: #666666;
     color: white;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-top: #929292 2px solid;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
+nav {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+    background: #666666;
+    height: 0;
+    width: 100%;
 
-#header-content {
-    height: 100%;
-    width: calc(100% - 447px);
-    display: inline-block;
+    /* box-shadow: 
+        inset 0px 8px 10px -10px black,
+        inset 0px -8px 10px -10px black;  */
+    transition: all 0.5s ease-in-out;
 }
 
 #logo {
-    position: absolute;
-    left: 18%;
-    height: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: inline-block;
-    background: #4aaaa5;
-    line-height: normal;
-    font-size: 55px;
     color: white;
-}
-
-#nav-options {
-    position: absolute;
-    height: calc(100% + 1px);
-    top: -1px;
-    right: 18%;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 48px;
     display: inline-block;
 }
 
-#content {
+#img-space {
+    background: rgb(92,163,228);
     position: absolute;
-    top: 70px;
-    width: 100%;
-    height: calc(100% - 70px);
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: -20px;
+    border-radius: 200px;
 }
 
-#main-content {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    min-height: 300px;
-    padding: 20px;
-    margin-top: 100px;
-    background: white;
-    border: 2px solid #dddddd;
-    border-radius: 5px;
-    position: relative;
+#nav-show, #nav-hide{
+    position: absolute;
+    justify-content: right;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 48px;
+
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+}
+
+#nav-btn-section {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: inline-block;
 }
 
 .nav-btn {
-    margin-left:-3px;
-    margin-right: -2px;
     height: 100%;
-    width: 150px;
+    width: 100px;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: white;
+    background: none;
     border: none;
-    color: black;
-    background: white;
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
     outline: none;
+    border-left: 1px solid lightgray;
 }
 
-.nav-btn:active {
-    background: #dddddd;
+.nav-btn:hover {
+    background: #4d4d4d;
+    /* box-shadow: 
+        inset 0px 8px 10px -10px black,
+        inset 0px -8px 10px -10px black;  */
 }
 
 .active {
-    color: black;
-    background: #4aaaa5;
+    background: #929292;
+    /* box-shadow: 
+        inset 0px 8px 10px -10px black,
+        inset 0px -8px 10px -10px black;  */
 }
 
-.active:active {
-    background: lightgray;
+.fa-github {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 32px;
 }
 
-/* ABOUT PAGE */
-
-#about-img {
-    height: 200px;
-    width: 200px;
-    margin-right: 20px;
-    float: left;
+.fa-linkedin-in {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 32px;
 }
 
-#about-p {
-    top: 0;
-    display: inline;
-}
+/* INDEX */
 
-/* PRJECTS PAGE */
-
-.project-tile {
-    height: 300px;
-    width: 400px;
-    margin: 11px;
-    background: whitesmoke;
-    display: inline-block;
-    position: relative;
-    filter: grayscale(100%);
-}
-
-.project-tile:hover {
-    filter: none;
-}
-
-.project-tile:active {
-    filter: brightness(50%);
-}
-
-.project-img {
-    height: 100%;
-    width: 100%;
+#me-div {
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 125px);
+    z-index: 99;
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
     overflow: hidden;
+    border: 2px solid white;
 }
 
-.project-title {
+#me-img {
+    width: 100%;
+    height: 100%;
+}
+
+#main-contents {
+    position: absolute;
+    top: 195px;
+    left: 20%;
+    width: 60%;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 145px 20px 20px 20px;
+}
+
+/* PROJECTS */
+
+#projects-content {
+    position: absolute;
+    top: 195px;
+    left: 20%;
+    background: rgba(129, 129, 129, 0.8);
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    color: white;
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+#projects-header {
+    font-size: 32px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.project-div {
+    position: relative;
+    background-image: url("../images/horizon.jpg");
+    background-size: 200%;
+    background-position: center;
+    margin: 10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 400px;
+    width: 500px;
+}
+
+.project-banner {
     position: absolute;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 50px;
     bottom: 40px;
-    background: rgb(87,87,87);
-    color: white;
-    font-size: 32px;
-    text-align: center;
+    background: #4d4d4d;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 24px;
+    font-family: sans-serif;
 }
 
-/* CONTACT PAGE */
-
-#contact-info {
-    margin-top: 20px;
-}
-
-#first-name {
-    width:50%;
-}
-
-#last-name {
-    width:50%;
-}
-
-#email{
-    width:50%;
-}
-
-#message{
-    width: 100%;
+.fa-code {
+    display: inline-block;
+    position: relative;
+    background: #929292;
+    border-radius: 20px;
+    padding: 7px 4px 7px 4px;
+    top: 0px;
+    margin-right: 10px;
 }
