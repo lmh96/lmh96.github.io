@@ -12,8 +12,8 @@
 
     <style>
         body {
-            background-color: #5CA3E4;
-            background-image: url("./assets/images/solar-system.jpg");
+            background-color: #231F20;
+            background-image: url("./assets/images/earth.png");
             background-attachment: fixed;
             background-position: center;
             background-size: auto 100%;
@@ -29,44 +29,87 @@
         <h1 id="logo">
             Logan Hill
         </h1>
-        <button id="nav-show">
-            =
-        </button>
-        <nav>
-            <div id="contact-links">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-linkedin-in"></i>
-            </div>
-            <div id="img-space"></div>
-            <div id="nav-btn-section">
-                <button class="nav-btn active" onclick="window.location.href='#'">
-                    About
-                </button>
-                <button class="nav-btn" onclick="window.location.href='./projects.html'">
-                    Projects
-                </button>
-            </div>
-        </nav>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin-in"></i>
     </header>
+    <nav>
+        <button class="nav-btn" id="about-btn">
+            About
+        </button>
+        <button class="nav-btn" id="projects-btn">
+            Projects
+        </button>
+        <button class="nav-btn" id="contacts-btn">
+            Contact
+        </button>
+    </nav>
 
-    <main>
+    <div id="prompt-div">
+        <div id="prompt-arrow">V</div>
+        Scroll down to see more!
+    </div>
+
+    <section id="about-contents">
         <div id="me-div">
             <img id="me-img" src="assets/images/horizon.jpg">
         </div>
         <section id="main-contents">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, tempora. Voluptatum, eius. Natus rerum libero doloribus distinctio voluptatibus obcaecati saepe porro, nam eligendi quasi deserunt omnis magnam nobis laboriosam officia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptas, blanditiis atque saepe laudantium quo est quas sed ea qui eos harum ipsum officia recusandae debitis totam dolore incidunt?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quam tempora tempore officia eos consequuntur quibusdam repellendus rem explicabo, vitae inventore alias deserunt laboriosam! Blanditiis dolorum quia eius necessitatibus distinctio!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptas nobis hic expedita praesentium aperiam sequi, eos enim nisi, mollitia dolor error laudantium quidem aliquam odio aut perferendis corrupti.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas animi cum repellendus possimus praesentium harum libero voluptatum, delectus error illum consectetur! Dolorem ipsa eligendi eveniet illo, minus sapiente sunt voluptas!
-        </section>
-    </main>
 
-    <footer>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, tempora. Voluptatum, eius. Natus rerum
+            libero doloribus distinctio voluptatibus obcaecati saepe porro, nam eligendi quasi deserunt omnis magnam
+            nobis laboriosam officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptas, blanditiis atque saepe
+            laudantium quo est quas sed ea qui eos harum ipsum officia recusandae debitis totam dolore incidunt?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quam tempora tempore officia eos
+            consequuntur
+            quibusdam repellendus rem explicabo, vitae inventore alias deserunt laboriosam! Blanditiis dolorum quia
+            eius
+            necessitatibus distinctio!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptas nobis hic expedita
+            praesentium aperiam sequi, eos enim nisi, mollitia dolor error laudantium quidem aliquam odio aut
+            perferendis corrupti.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas animi cum repellendus possimus
+            praesentium
+            harum libero voluptatum, delectus error illum consectetur! Dolorem ipsa eligendi eveniet illo, minus
+            sapiente sunt voluptas!
+        </section>
+    </section>
+
+    <section id="projects-contents">
+        <section id="projects">
+            <h1 id="projects-header">
+                Projects
+            </h1>
+            <div class="project-div" href="http://lmh96.github.io/QuickRecipeSite">
+                <div class="project-banner">
+                    <i class="fas fa-code" href="https://github.com/lmh96/QuickRecipeSite"></i>
+                    QuickRecipe
+                </div>
+            </div>
+            <div class="project-div" href="https://github.com/lmh96/liri-node-app">
+                <div class="project-banner">
+                    <i class="fas fa-code" href="https://github.com/lmh96/liri-node-app"></i>
+                    LIRI
+                </div>
+            </div>
+            <div class="project-div">
+                <div class="project-banner">
+                    <i class="fas fa-code"></i>
+                    RPG Game
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="contact-contents">
+        contacts
+    </section>
+
+    <!-- <footer>
         Contacts<br>
         Phone: 770-241-0986
         Email: loganhill23@gmail.com
-    </footer>
+    </footer> -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
