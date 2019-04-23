@@ -60,7 +60,7 @@ $("#projects-btn").on("click", function() {
 });
 
 $("#contacts-btn").on("click", function() {
-    $("html, body").animate({ scrollTop: window.innerHeight * 4 }, 500);
+    $("html, body").animate({ scrollTop: (window.innerHeight * 4) + 150}, 500);
 });
 
 git.on("click", function() {
